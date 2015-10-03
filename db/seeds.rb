@@ -7,6 +7,6 @@
 
         Link.create({
         subject: Faker::Team.creature,
-        post:    Faker::Internet.url
+        post:    Faker::Internet.url,
         user_id: user.id })
 end
