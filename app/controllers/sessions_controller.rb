@@ -13,16 +13,16 @@ class SessionsController < ApplicationController
       flash[:alert] = "Username or Password did not match."
       render :new
     end
+  end
 
-    def destroy #delete the login session
-      session[:logged_in_user] = nil
-      redirect_to root_path, notice: "Successfully logged out."
-    end
+  def destroy #delete the login session
+    session[:logged_in_user] = nil
+    redirect_to root_path, notice: "Successfully logged out."
+  end
 
-    private
+  private
 
     def set_user_session(user) #places temporary cookie on user's browser
       session[:logged_in_user] = user.id
     end
-  end
 end
