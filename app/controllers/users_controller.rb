@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user, except: [:new, :create] # you can view these things before logging in
 
   # GET /users
   # GET /users.json
