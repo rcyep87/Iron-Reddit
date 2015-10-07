@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(".main-body").text("Does this work?");
+$( ".edit-back" ).click(function() {
+  $( "#back" ).click();
+});
