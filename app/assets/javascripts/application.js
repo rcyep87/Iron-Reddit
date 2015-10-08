@@ -20,14 +20,14 @@ $( ".edit-back" ).click(function() {
   $( "#back" ).click();
 });
 
-// $( "#password" ).on( "mouseover", function() {
-//   if( !this.value ) {
-//     alert( "Please enter a password!" );
-//   }
-// });
+$( "#password" ).on( "mouseover", function() {
+  if( !this.value ) {
+    alert( "Please enter a password!" );
+  }
+});
 
-// $( "#username" ).on( "mouseover", function() {
-//   if( !this.value ) {
-//     alert( "Please enter a username!" );
-//   }
-// });
+$( "#username" ).on( "mouseover", function() {
+  if( !this.value ) {
+    alert( "Please enter a username!" );
+  }
+});
